@@ -1,0 +1,11 @@
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\bin\Debug\Business.dll
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\bin\Debug\Business.pdb
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\bin\Debug\DataAccess.dll
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\bin\Debug\Models.dll
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\bin\Debug\DataAccess.pdb
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\bin\Debug\Models.pdb
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\obj\Debug\Business.csproj.CopyComplete
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\obj\Debug\Business.dll
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\obj\Debug\Business.pdb
