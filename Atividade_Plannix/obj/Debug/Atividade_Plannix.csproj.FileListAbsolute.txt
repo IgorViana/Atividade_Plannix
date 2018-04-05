@@ -1,0 +1,2 @@
+C:\Users\Leonardo\Documents\Projetos\Plannix\Atividade_Plannix\Atividade_Plannix\obj\Debug\Atividade_Plannix.csprojResolveAssemblyReference.cache
+C:\Users\Leonardo\Documents\Projetos\Plannix\Atividade_Plannix\Atividade_Plannix\obj\Debug\Atividade_Plannix.csproj.CoreCompileInputs.cache
