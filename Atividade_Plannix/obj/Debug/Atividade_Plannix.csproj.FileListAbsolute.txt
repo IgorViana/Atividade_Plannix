@@ -59,3 +59,5 @@ C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Atividade_Plannix\obj\
 C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Atividade_Plannix\obj\Debug\Atividade_Plannix.csproj.CopyComplete
 C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Atividade_Plannix\obj\Debug\Atividade_Plannix.dll
 C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Atividade_Plannix\obj\Debug\Atividade_Plannix.pdb
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Atividade_Plannix\bin\DataAccess.dll
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Atividade_Plannix\bin\DataAccess.pdb
