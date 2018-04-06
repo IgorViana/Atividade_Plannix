@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Business.Contrato;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,41 +10,40 @@ using System.Web.Http;
 
 namespace Atividade_Plannix.Controllers
 {
+    [RoutePrefix("api/controlador")]
     public class EstoqueController : ApiController
     {
-       public  Tijolo[] tijolos = new Tijolo[10];
+
+        private readonly ITijoloService service;
+
+        public EstoqueController(ITijoloService service)
+        {
+            this.service = service;
+        }
+        [HttpPost]
+        public IHttpActionResult Add (Tijolo tijolo)
+        {
+            service.AddTijolosAndShow(tijolo);
+            return null;
+        }
        
         [HttpGet]
-        public Tijolo GetTijoloPorSerial(int serialDigitado)
+        public IHttpActionResult GetPorSerial (int serialDigitado)
         {
-            Tijolo tijoloPorSerial = tijolos.FirstOrDefault((t) => t.serial == this.serialDigitado);
-            return tijoloPorSerial;
+             service.GetPorSerial(serialDigitado);
+            return null;
+            
+        }
+
+        [HttpGet]
+        public IHttpActionResult OrdenarPorData()
+        {
+            service.OrdenarTijolosPorData();
+            return null;
         }
 
 
-        [HttpPost]
-        public List<Tijolo> AddTijolo(Tijolo tijolo)
-        {
 
-            int index = tijolos.Length;
-            tijolos[index] = tijolo;
-
-            return tijolos;
-        }
-
-        public List<Tijolo> RetornarTijolos()
-        {
-            Tijolo temp;
-            for (int i = 0; i < tijolos.Length; i++)
-            {
-                temp = tijolos[i];
-                
-
-            }
-            foreach (Tijolo a in tijolos)
-            {
-                return a;
-            }
-        }
+        
     }
 }

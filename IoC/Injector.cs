@@ -1,4 +1,8 @@
-﻿using SimpleInjector;
+﻿using Business.Contrato;
+using Business.Servicos;
+using DataAccess.Contrato;
+using DataAccess.Servicos;
+using SimpleInjector;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,12 +20,13 @@ namespace IoC
         public static Container RegisterContainers()
         {
 
-            // EXEMPLO DE ADIÇÃO DE INDEPENDÊNCIA
-            // container.RegisterSingleton<INTERFACE_AQUI, CLASSE_REFERENTE_A_INTERFACE>();
-
             var container = new Container();
+            
+            // EXEMPLO DE ADIÇÃO DE DEPENDÊNCIA
+            // container.RegisterSingleton<INTERFACE_AQUI, CLASSE_REFERENTE_A_INTERFACE>();
+            container.RegisterSingleton<ITijoloService, TijoloService>();
 
-
+            container.RegisterSingleton<ITijoloRepository, TijoloRepository>();
 
             return container;
         }

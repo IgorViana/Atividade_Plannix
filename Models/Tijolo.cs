@@ -9,12 +9,19 @@ namespace Models
     public class Tijolo
     {
         public Tijolo(){ }
-        public Tijolo(string Matrial, DateTime Date, string Fabrica, int Serial)
+        public Tijolo(Tijolo tijoloex)
         {
-            material = Matrial;
-            date = Date;
-            fabrica = Fabrica;
-            serial = Serial;
+            this.material = tijoloex.material;
+            this.date = tijoloex.date;
+            this.fabrica = tijoloex.fabrica;
+            this.serial = tijoloex.serial;
+        }
+        public Tijolo(string matrial, DateTime date, string fabrica, int serial)
+        {
+            this.material = matrial;
+            this.date = date;
+            this.fabrica = fabrica;
+            this.serial = serial;
         }
 
 

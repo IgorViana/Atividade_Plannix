@@ -11,3 +11,5 @@ C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\IoC\obj\Debug\IoC.cspr
 C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\IoC\obj\Debug\IoC.csproj.CopyComplete
 C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\IoC\obj\Debug\IoC.dll
 C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\IoC\obj\Debug\IoC.pdb
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\IoC\bin\Debug\Models.dll
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\IoC\bin\Debug\Models.pdb
