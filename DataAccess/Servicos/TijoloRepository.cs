@@ -10,6 +10,11 @@ namespace DataAccess.Servicos
 {
     public class TijoloRepository : ITijoloRepository
     {
+        //Para depois
+       // List<Tijolo> t = new List<Tijolo>();    
+        
+
+
 
         Tijolo[] arrayDeTijolos = new Tijolo[10];
 

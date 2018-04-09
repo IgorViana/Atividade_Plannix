@@ -19,8 +19,8 @@ namespace Atividade_Plannix.Controllers
         {
             this.service = service;
         }
-        [HttpPost, Route("add")]
 
+        [HttpPost, Route("add")]
         public IHttpActionResult Add (Tijolo tijolo)
         {
          
@@ -41,8 +41,6 @@ namespace Atividade_Plannix.Controllers
         {
             return Ok(service.ShowAll());
         }
-
-       
 
         [HttpGet, Route("getOrdenado")]
         public IHttpActionResult OrdenarPorData()

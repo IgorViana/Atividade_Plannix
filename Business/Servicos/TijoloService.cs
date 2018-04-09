@@ -44,7 +44,6 @@ namespace Business.Servicos
             return repositorio.OrdenarCresOuDecr(condicao);
         }
 
-
     }
 
 }
