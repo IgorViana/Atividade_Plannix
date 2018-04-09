@@ -17,6 +17,7 @@ namespace Business.Servicos
         {
             this.repositorio = repositorio;
         }
+
         public Array AddTijolosAndShow(Tijolo tijolo)
         {
             return repositorio.AddTijolosAndShow(tijolo);
@@ -27,7 +28,6 @@ namespace Business.Servicos
         {
             return repositorio.GetTijoloPorSerial(serialDigitado);
         }
-
 
         public Array OrdenarTijolosPorData()
         {

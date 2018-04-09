@@ -6,14 +6,14 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-
+using System.Web.Http.Cors;
 
 namespace Atividade_Plannix.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     [RoutePrefix("api/controlador")]
     public class EstoqueController : ApiController
     {
-
         private readonly ITijoloService service;
 
         public EstoqueController(ITijoloService service)
@@ -41,9 +41,5 @@ namespace Atividade_Plannix.Controllers
             service.OrdenarTijolosPorData();
             return null;
         }
-
-
-
-        
     }
 }

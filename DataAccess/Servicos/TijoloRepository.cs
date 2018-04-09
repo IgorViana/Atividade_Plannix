@@ -103,9 +103,7 @@ namespace DataAccess.Servicos
                 }
                 return arrayDeTijolosOrdenado;
             }
-
-
+            return null;
         }
-
     }
 }

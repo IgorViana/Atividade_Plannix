@@ -9,8 +9,10 @@ namespace Atividade_Plannix
     {
         public static void Register(HttpConfiguration config)
         {
-            // Web API configuration and services
+            // CORS
+            config.EnableCors();
 
+            // Web API configuration and services
             // Web API routes
             config.MapHttpAttributeRoutes();
 
