@@ -23,6 +23,11 @@ namespace DataAccess.Servicos
             return arrayDeTijolos;
         }
 
+        public Array ShowAll()
+        {
+            return arrayDeTijolos;
+        }
+
         public Tijolo GetTijoloPorSerial(int serialDigitado)
         {
             Tijolo tijoloPorSerial = arrayDeTijolos.FirstOrDefault((t) => t.serial == serialDigitado);

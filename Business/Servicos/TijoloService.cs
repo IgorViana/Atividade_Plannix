@@ -24,6 +24,11 @@ namespace Business.Servicos
 
         }
 
+        public Array ShowAll()
+        {
+            return repositorio.ShowAll();
+        }
+
         public Tijolo GetPorSerial (int serialDigitado)
         {
             return repositorio.GetTijoloPorSerial(serialDigitado);
@@ -38,6 +43,8 @@ namespace Business.Servicos
         {
             return repositorio.OrdenarCresOuDecr(condicao);
         }
+
+
     }
 
 }

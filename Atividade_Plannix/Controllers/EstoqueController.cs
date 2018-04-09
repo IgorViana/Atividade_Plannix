@@ -36,6 +36,14 @@ namespace Atividade_Plannix.Controllers
 
         }
 
+        [HttpGet, Route("getall")]
+        public IHttpActionResult ShowAll()
+        {
+            return Ok(service.ShowAll());
+        }
+
+       
+
         [HttpGet, Route("getOrdenado")]
         public IHttpActionResult OrdenarPorData()
         {
@@ -51,5 +59,7 @@ namespace Atividade_Plannix.Controllers
 
             return Ok(service.OrdenarCresOuDecr(condicao));
         }
+
+       
     }
 }
