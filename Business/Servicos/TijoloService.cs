@@ -33,5 +33,11 @@ namespace Business.Servicos
         {
             return repositorio.OrdenarTijolosPorData();
         }
+
+        public  Array OrdenarCresOuDecr(string condicao)
+        {
+            return repositorio.OrdenarCresOuDecr(condicao);
+        }
     }
+
 }

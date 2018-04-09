@@ -12,5 +12,6 @@ namespace Business.Contrato
         Array AddTijolosAndShow(Tijolo tijolo);
         Tijolo GetPorSerial(int serialDigitado);
         Array OrdenarTijolosPorData();
+        Array OrdenarCresOuDecr(string condicao);
     }
 }

@@ -13,5 +13,6 @@ namespace DataAccess.Contrato
         Array AddTijolosAndShow(Tijolo tijolo);
         Tijolo GetTijoloPorSerial(int serialDigitado);
         Array OrdenarTijolosPorData();
+        Array OrdenarCresOuDecr(string condicao);
     }
 }

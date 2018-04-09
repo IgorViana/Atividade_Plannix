@@ -10,7 +10,6 @@ using System.Web.Http.Cors;
 
 namespace Atividade_Plannix.Controllers
 {
-    [EnableCors(origins: "*", headers: "*", methods: "*")]
     [RoutePrefix("api/controlador")]
     public class EstoqueController : ApiController
     {
@@ -20,26 +19,37 @@ namespace Atividade_Plannix.Controllers
         {
             this.service = service;
         }
-        [HttpPost]
+        [HttpPost, Route("add")]
+
         public IHttpActionResult Add (Tijolo tijolo)
         {
-            service.AddTijolosAndShow(tijolo);
-            return null;
+         
+            return Ok(service.AddTijolosAndShow(tijolo)); 
         }
        
-        [HttpGet]
+        [HttpGet, Route("getserial")]
         public IHttpActionResult GetPorSerial (int serialDigitado)
         {
-             service.GetPorSerial(serialDigitado);
-            return null;
+           //  service.GetPorSerial(serialDigitado);
             
+            return Ok(service.GetPorSerial(serialDigitado));
+
         }
 
-        [HttpGet]
+        [HttpGet, Route("getOrdenado")]
         public IHttpActionResult OrdenarPorData()
         {
-            service.OrdenarTijolosPorData();
-            return null;
+            //service.OrdenarTijolosPorData();
+           
+            return Ok(service.OrdenarTijolosPorData());
+        }
+
+        [HttpGet, Route("getOrdenadadoCres")]
+        public IHttpActionResult OrdenarCresOuDecr(string condicao)
+        {
+            //service.OrdenarTijolosPorData();
+
+            return Ok(service.OrdenarCresOuDecr(condicao));
         }
     }
 }
