@@ -40,8 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contrato\IObrasService.cs" />
     <Compile Include="Contrato\ITijoloService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicos\ObrasService.cs" />
     <Compile Include="Servicos\TijoloService.cs" />
   </ItemGroup>
   <ItemGroup>

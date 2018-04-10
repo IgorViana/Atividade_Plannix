@@ -12,10 +12,7 @@ namespace DataAccess.Servicos
     {
         //Para depois
        // List<Tijolo> t = new List<Tijolo>();    
-        
-
-
-
+    
         Tijolo[] arrayDeTijolos = new Tijolo[10];
 
 

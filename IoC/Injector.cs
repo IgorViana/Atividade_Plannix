@@ -25,8 +25,11 @@ namespace IoC
             // EXEMPLO DE ADIÇÃO DE DEPENDÊNCIA
             // container.RegisterSingleton<INTERFACE_AQUI, CLASSE_REFERENTE_A_INTERFACE>();
             container.RegisterSingleton<ITijoloService, TijoloService>();
-
             container.RegisterSingleton<ITijoloRepository, TijoloRepository>();
+
+
+            container.RegisterSingleton<IObrasRepository, ObrasRepositoy>();
+            container.RegisterSingleton<IObrasService, ObrasService>();
 
             return container;
         }

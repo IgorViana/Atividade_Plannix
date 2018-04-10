@@ -9,3 +9,5 @@ C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\obj\Debug\Bus
 C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\obj\Debug\Business.csproj.CopyComplete
 C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\obj\Debug\Business.dll
 C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\obj\Debug\Business.pdb
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\bin\Debug\Dapper.dll
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Business\bin\Debug\Dapper.xml

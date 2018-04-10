@@ -1,6 +1,8 @@
 ﻿using Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +11,18 @@ namespace DataAccess
 {
     public class TijoloData
     {
-        Tijolo[] arrayDeTijolos = new Tijolo[10];
-        
         private int i = 0;
+        private static string connString = @"Data Source=PLANNIXSERVER\SQL2008R2;
+            Initial Catalog=TEA1101;
+            User Id=sa;
+            Password=plannix@2016;";
+
+        Tijolo[] arrayDeTijolos = new Tijolo[10];
+
+        
+
+       
+
 
         public Array AddTijolosAndShow(Tijolo tijolo)
         {

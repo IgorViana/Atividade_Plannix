@@ -3,3 +3,4 @@ C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Models\bin\Debug\Model
 C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Models\obj\Debug\Models.dll
 C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Models\obj\Debug\Models.pdb
+C:\Users\Igor\Básicos de Web API e Git\Atividade_Plannix\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
