@@ -37,6 +37,7 @@ namespace DataAccess.Servicos
             string sql = @"SELECT * FROM POBRAS";
 
             conn.Open();
+           
             List<Obra> ObrasLista = (List<Obra>)conn.Query<Obra>(sql);
             conn.Close();
 
