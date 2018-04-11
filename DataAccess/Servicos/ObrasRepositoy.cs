@@ -77,5 +77,64 @@ namespace DataAccess.Servicos
             return ObrasLista;
            
         }
+
+        public void Update(Obra obra)
+        {
+            SqlConnection conn = new SqlConnection(connString);
+            string sql = @"UPDATE POBRAS
+            SET Codobra = @Codobra,
+            Codobraexterno = @Codobraexterno,
+            Cliente = @Cliente, 
+            Nomeobra = @Nomeobra,
+            Sigla = @Sigla,
+            Tipo = @Tipo,
+            Dataini = @Dataini,
+            Datafim = @Datafim, 
+            Corlegendaobra = @Corlegendaobra, 
+            Status = @Status, 
+            Telefone1 = @Telefone1, 
+            Telefone2 = @Telefone2,
+            Logradouro = @Logradouro,
+            Numero = @Numero, 
+            Bairro = @Bairro, 
+            Cep = @Cep,
+            Cidade = @Cidade, 
+            Estado = @Estado,
+            Observacoes = @Observacoes,
+            Datainicialold = @Datainicialold,
+            Datafinalold = @Datafinalold,
+            Delayprojeto = @Delayprojeto,
+            Delayfabricacao = @Delayfabricacao,
+            Delaylogistica = @Delaylogistica,
+            Delaymontagem = @Delaymontagem,
+            Cnpj = @Cnpj, 
+            Inscestadual = @Inscestadual, 
+            Inscmunicipal = @Inscmunicipal, 
+            Cpf = @Cpf, 
+            Rg = @Rg,
+            Organizacaovenda = @Organizacaovenda,
+            Canaldistribuicao = @Canaldistribuicao,
+            Qtdecargas = @Qtdecargas,
+            Classobra = @Classobra
+                
+            WHERE CODOBRA = @Codobra";
+
+            conn.Open();
+            conn.Execute(sql,obra);
+            conn.Close();
+        }
+
+        public void DeletePorCodigo(int codigoObra)
+        {
+
+            SqlConnection conn = new SqlConnection(connString);
+
+            string sql = @"DELETE FROM POBRAS
+            WHERE CODOBRA = @codigoObra";
+
+            conn.Open();
+            conn.Execute(sql, codigoObra);
+            conn.Close();
+        }
     }
 }

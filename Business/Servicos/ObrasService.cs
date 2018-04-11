@@ -27,5 +27,18 @@ namespace Business.Servicos
         { 
             return repositorio.ShowObra();
         }
+
+        public void Update(Obra obra)
+        {
+           repositorio.Update(obra);
+        }
+        public void DeletePorCodigo(int codigoObra)
+        {
+            repositorio.DeletePorCodigo(codigoObra);
+        }
+
+
+
+
     }
 }

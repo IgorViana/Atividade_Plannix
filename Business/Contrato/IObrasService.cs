@@ -11,5 +11,7 @@ namespace Business.Contrato
     {
         void Inserir(Obra obra);
         List<Obra> ShowObra();
+        void Update(Obra obra);
+        void DeletePorCodigo(int codigoObra);
     }
 }

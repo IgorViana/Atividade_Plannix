@@ -38,5 +38,33 @@ namespace Atividade_Plannix.Controllers
         { 
             return Ok(service.ShowObra());
         }
+
+        [HttpPut, Route("att")]
+        public IHttpActionResult Atualizar(Obra obra)
+        {
+            try
+            {
+                service.Update(obra);
+            }
+            catch
+            {
+                throw;
+            }
+            return null;
+        }
+        [HttpDelete, Route("del")]
+        public IHttpActionResult DeletarPorCodigo(int codigoObra)
+        {
+            try
+            {
+                service.DeletePorCodigo(codigoObra);
+            }
+            catch
+            {
+                throw;
+            }
+            return null;
+        }
+
     }
 }
