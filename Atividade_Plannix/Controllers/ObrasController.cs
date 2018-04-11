@@ -25,13 +25,11 @@ namespace Atividade_Plannix.Controllers
             try
             {
                 service.Inserir(obra);
-                
             }
             catch
             {
                 throw;
             }
-
             return null;
         }
 

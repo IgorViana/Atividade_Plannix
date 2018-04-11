@@ -27,21 +27,21 @@ namespace Models
         public string Cep { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
-        public string Obsevacoes { get; set; }
-        public string Datainicialold { get; set; }
-        public string Datafinalold { get; set; }
-        public int Delayprojeto { get; set; }
-        public int Delayfabricacao { get; set; }
-        public int Delaylogistica { get; set; }
-        public int Delaymontagem { get; set; }
+        public string Observacoes { get; set; }
+        public string DataInicialOld { get; set; }
+        public string DataFinalOld { get; set; }
+        public int DelayProjeto { get; set; }
+        public int DelayFabricacao { get; set; }
+        public int DelayLogistica { get; set; }
+        public int DelayMontagem { get; set; }
         public string Cnpj { get; set; }
-        public string Incsestadual { get; set; }
-        public string Incsmunicipal { get; set; }
+        public string InscEstadual { get; set; }
+        public string InscMunicipal { get; set; }
         public string Cpf { get; set; }
         public string Rg { get; set; }
-        public string Organizacaovenda { get; set; }
-        public string Canaldistribuicao { get; set; }
-        public int Qtdecargas { get; set; }
-        public Char Classeobra { get; set; }
+        public string OrganizacaoVenda { get; set; }
+        public string CanalDistribuicao { get; set; }
+        public int QtdeCargas { get; set; }
+        public Char ClassObra { get; set; }
     }
 }

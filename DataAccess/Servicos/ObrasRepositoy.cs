@@ -22,7 +22,40 @@ namespace DataAccess.Servicos
         public void Inserir(Obra obra)
         {
             SqlConnection conn = new SqlConnection(connString);
-            string sql = @"INSERT INTO POBRAS VALUES (@Codobra, @Codobraexterno, @cliente, @nomeobra, @sigla, @tipo)";
+            string sql = @"INSERT INTO POBRAS VALUES ( @Codobra,
+            @Codobraexterno,
+            @Cliente, 
+            @Nomeobra,
+            @Sigla,
+            @Tipo,
+            @Dataini,
+            @Datafim, 
+            @Corlegendaobra, 
+            @Status, 
+            @Telefone1, 
+            @Telefone2,
+            @Logradouro,
+            @Numero, 
+            @Bairro, 
+            @Cep,
+            @Cidade, 
+            @Estado,
+            @Observacoes,
+            @Datainicialold,
+            @Datafinalold,
+            @Delayprojeto,
+            @Delayfabricacao,
+            @Delaylogistica,
+            @Delaymontagem,
+            @Cnpj, 
+            @Inscestadual, 
+            @Inscmunicipal, 
+            @Cpf, 
+            @Rg,
+            @Organizacaovenda,
+            @Canaldistribuicao,
+            @Qtdecargas,
+            @Classobra)";
 
             conn.Open();
             conn.Execute(sql, obra);
