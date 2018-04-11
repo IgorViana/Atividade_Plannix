@@ -132,8 +132,11 @@ namespace DataAccess.Servicos
             string sql = @"DELETE FROM POBRAS
             WHERE CODOBRA = @codigoObra";
 
+            DynamicParameters parametros = new DynamicParameters();
+            parametros.Add("@codigoObra", codigoObra);
+
             conn.Open();
-            conn.Execute(sql, codigoObra);
+            conn.Execute(sql, parametros);
             conn.Close();
         }
     }
